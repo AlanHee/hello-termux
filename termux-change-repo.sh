@@ -1,5 +1,5 @@
 #!/bin/bash
-source funs.sh
+
 yesOrNo "Change termux repo?(y/n)" termux-change-repo
 
 
