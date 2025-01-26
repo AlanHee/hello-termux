@@ -12,4 +12,4 @@ if [ ! -z $remote_ip ]; then
 fi
 
 saveExport REMOTE_IP $remoteIP
-echo "Remote IP($remoteIP) setup"
+echo "Setup remote ip: $remoteIP"
