@@ -6,14 +6,14 @@ sshdUser="u0_007"
 sshdIP="192.168.1.100"
 sshdPort=8022
 
-if [ ! -z $SSHD_USER ]; then
-	sshdUser=$SSHD_USER
+if [ ! -z $PHONE_USER ]; then
+	sshdUser=$PHONE_USER
 fi
-if [ ! -z $SSHD_IP ]; then
-	sshdIP=$SSHD_IP
+if [ ! -z $PHONE_IP ]; then
+	sshdIP=$PHONE_IP
 fi
-if [ ! -z $SSHD_PORT ]; then
-	sshdPort=$SSHD_PORT
+if [ ! -z $PHONE_PORT ]; then
+	sshdPort=$PHONE_PORT
 fi
 
 function _() {
