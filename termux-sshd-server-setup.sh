@@ -1,9 +1,9 @@
 #!/bin/bash
 if [ "$(uname -o)" = "Android" ]; then
-	apt update -qyy
-	apt upgrade -qyy
+	pkg update -qyy
+	pkg upgrade -qyy
 	termux-setup-storage
-	pkg install openssh
+	pkg install openssh rsync -qyy
 	#you need a password for login
 	passwd
 	sshd
@@ -14,10 +14,10 @@ if [ "$(uname -o)" = "Android" ]; then
 	#ssh `whoani`@127.0.0.1 -p 8022
 
 	#auto run sshd while termux open
-	#echo "sshd" >.profile
+	echo "sshd" >.profile
 
 	echo 'Setup sshd.'
-	echo 'SSh server is running.'
+	echo 'ssh server is running.'
 	# echo 'client setup flow:'
 	# echo '1 gen pub key with config-ssh-keygen'
 	# echo '2 cat id_rsa.pub >> authorized_keys'
